@@ -83,12 +83,11 @@ const Home = () => {
                 </div>
               </div>
               <div>
-                <h1 className={`text-lg text-lime-300`}>
-                  Price {priceType === 'after' ? 'After' : 'Before'} Discount:{' '}
+                <h1 className={`text-xl text-lime-300`}>
+                  Price {priceType === 'after' ? 'After' : 'Before'} Discount: $
                   {priceType === 'after'
                     ? priceBefore - discountVal
                     : priceAfter + discountVal}
-                  $
                 </h1>
               </div>
 
@@ -128,8 +127,8 @@ const Home = () => {
               </div>
 
               <div>
-                <h1 className={`text-lg text-lime-300`}>
-                  You are saving {discountVal}$
+                <h1 className={`text-xl text-lime-300`}>
+                  You are saving ${discountVal}
                 </h1>
               </div>
             </div>
